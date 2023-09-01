@@ -3,21 +3,20 @@ from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters import Command
 from keyboard import create_website_button
 
-# Р¤СѓРЅРєС†РёСЏ РґР»СЏ СЂРµРіРёСЃС‚СЂР°С†РёРё РѕР±СЂР°Р±РѕС‚С‡РёРєР° СЃРѕР±С‹С‚РёСЏ РїСЂРёСЃРѕРµРґРёРЅРµРЅРёСЏ РЅРѕРІРѕРіРѕ СѓС‡Р°СЃС‚РЅРёРєР° Рє С‡Р°С‚Сѓ
 def register_handlers(dp):
     @dp.message_handler(content_types=[types.ContentType.NEW_CHAT_MEMBERS])
     async def on_new_chat_members(message: types.Message):
         for member in message.new_chat_members:
             if not member.is_bot and member.username:
-                welcome_message = f"""Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ, @{member.username}! 
+                welcome_message = f"""Добро пожаловать, @{member.username}! 
 
-РњС‹ СЂР°РґС‹ РІРёРґРµС‚СЊ Р’Р°СЃ Р·РґРµСЃСЊ.
+Мы рады видеть Вас здесь.
 
-РџСЂРѕСЃРёРј Р’Р°СЃ РѕР·РЅР°РєРѕРјРёС‚СЃСЏ СЃ РёРЅС„РѕСЂРјР°С†РёРµР№ Рѕ С‚РµРјР°С‚РёРєРµ С‡Р°С‚Р° Рё РЅРµРєРѕС‚РѕСЂС‹РјРё РїСЂР°РІРёР»Р°РјРё, РЅР°Р¶Р°РІ РЅР° РєРЅРѕРїРєСѓ РЅРёР¶Рµ
+Просим Вас ознакомиться с информацией о тематике чата и некоторыми правилами, нажав на кнопку ниже
 """
 
                 keyboard = types.InlineKeyboardMarkup()
-                website_button = create_website_button()  # РСЃРїРѕР»СЊР·СѓРµРј С„СѓРЅРєС†РёСЋ РёР· keyboard.py
+                website_button = create_website_button() 
                 keyboard.add(website_button)
 
                 await message.answer(welcome_message, reply_markup=keyboard)

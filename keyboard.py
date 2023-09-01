@@ -1,5 +1,5 @@
 from aiogram import types
 
 def create_website_button():
-    button = types.InlineKeyboardButton(text="–ü–†–û–ß–ò–¢–ê–¢–¨", url="https://t.me/prirodniechydesa34/13?comment=519")
+    button = types.InlineKeyboardButton(text="œ–Œ◊»“¿“‹", url="https://t.me/prirodniechydesa34/13?comment=519")
     return button
