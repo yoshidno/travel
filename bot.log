@@ -589,3 +589,9 @@ Traceback (most recent call last):
   File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
     raise err(cls.text or description)
 aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2023-09-01 21:29:40,829 - aiogram - INFO - Bot: 34Приветствие [@travel_alis_bot]
+2023-09-01 21:29:40,983 - aiogram - WARNING - Updates were skipped successfully.
+2023-09-01 21:29:40,983 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2023-09-01 21:34:10,033 - aiogram - INFO - Bot: 34РџСЂРёРІРµС‚СЃС‚РІРёРµ [@travel_alis_bot]
+2023-09-01 21:34:10,189 - aiogram - WARNING - Updates were skipped successfully.
+2023-09-01 21:34:10,190 - aiogram.dispatcher.dispatcher - INFO - Start polling.
