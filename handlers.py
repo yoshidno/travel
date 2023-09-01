@@ -9,11 +9,11 @@ def register_handlers(dp):
     async def on_new_chat_members(message: types.Message):
         for member in message.new_chat_members:
             if not member.is_bot and member.username:
-                welcome_message = f"""Добро пожаловать, @{member.username}! 🤝
+                welcome_message = f"""Добро пожаловать, @{member.username}! 
 
 Мы рады видеть Вас здесь.
 
-Просим Вас ознакомится с информацией о тематике чата и некоторыми правилами, нажав на кнопку ⬇️
+Просим Вас ознакомится с информацией о тематике чата и некоторыми правилами, нажав на кнопку ниже
 """
 
                 keyboard = types.InlineKeyboardMarkup()
