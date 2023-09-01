@@ -8,13 +8,12 @@ def register_handlers(dp):
     async def on_new_chat_members(message: types.Message):
         for member in message.new_chat_members:
             if not member.is_bot and member.username:
-                welcome_message = f"""Добро пожаловать, @{member.username}! 
+                welcome_message = f"""Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ, @{member.username}! 
 
-Мы рады видеть Вас здесь.
+РњС‹ СЂР°РґС‹ РІРёРґРµС‚СЊ Р’Р°СЃ Р·РґРµСЃСЊ.
 
-Просим Вас ознакомиться с информацией о тематике чата и некоторыми правилами, нажав на кнопку ниже
+РџСЂРѕСЃРёРј Р’Р°СЃ РѕР·РЅР°РєРѕРјРёС‚СЊСЃСЏ СЃ РёРЅС„РѕСЂРјР°С†РёРµР№ Рѕ С‚РµРјР°С‚РёРєРµ С‡Р°С‚Р° Рё РЅРµРєРѕС‚РѕСЂС‹РјРё РїСЂР°РІРёР»Р°РјРё, РЅР°Р¶Р°РІ РЅР° РєРЅРѕРїРєСѓ РЅРёР¶Рµ
 """
-
                 keyboard = types.InlineKeyboardMarkup()
                 website_button = create_website_button() 
                 keyboard.add(website_button)
