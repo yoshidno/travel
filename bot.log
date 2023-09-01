@@ -1,0 +1,205 @@
+2023-08-31 23:48:02,275 - aiogram - INFO - Bot: Alis [@travel_alis_bot]
+2023-08-31 23:48:02,414 - aiogram - WARNING - Updates were skipped successfully.
+2023-08-31 23:48:02,415 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2023-08-31 23:48:10,392 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:82] in chat [group:-964141009]
+2023-08-31 23:48:10,490 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448677]: [success] (in 98 ms)
+2023-08-31 23:52:18,531 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:84] in chat [group:-973524039]
+2023-08-31 23:52:18,532 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448678]: [success] (in 1 ms)
+2023-08-31 23:53:06,589 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:85] in chat [group:-973524039]
+2023-08-31 23:53:06,692 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448679]: [success] (in 102 ms)
+2023-08-31 23:53:24,383 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:87] in chat [group:-973524039]
+2023-08-31 23:53:24,454 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448680]: [failed] (in 71 ms)
+2023-08-31 23:53:24,454 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-34' coro=<Dispatcher._process_polling_updates() done, defined at D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: can't find end of the entity starting at byte offset 41")>
+Traceback (most recent call last):
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\PythonProject1\handlers.py", line 23, in on_new_chat_members
+    await message.answer(welcome_message, reply_markup=keyboard, parse_mode=types.ParseMode.MARKDOWN)
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\types\message.py", line 438, in answer
+    return await self.bot.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of the entity starting at byte offset 41
+2023-08-31 23:53:41,001 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:88] in chat [group:-973524039]
+2023-08-31 23:53:44,577 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:89] in chat [group:-973524039]
+2023-08-31 23:53:44,753 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:90] in chat [group:-973524039]
+2023-08-31 23:53:44,823 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448683]: [failed] (in 70 ms)
+2023-08-31 23:53:44,823 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-44' coro=<Dispatcher._process_polling_updates() done, defined at D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: can't find end of the entity starting at byte offset 41")>
+Traceback (most recent call last):
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\PythonProject1\handlers.py", line 23, in on_new_chat_members
+    await message.answer(welcome_message, reply_markup=keyboard, parse_mode=types.ParseMode.MARKDOWN)
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\types\message.py", line 438, in answer
+    return await self.bot.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of the entity starting at byte offset 41
+2023-08-31 23:53:54,368 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:91] in chat [group:-973524039]
+2023-08-31 23:53:54,370 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448684]: [success] (in 1 ms)
+2023-08-31 23:54:03,432 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:92] in chat [group:-973524039]
+2023-08-31 23:54:09,146 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:93] in chat [group:-973524039]
+2023-08-31 23:54:09,218 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448686]: [failed] (in 73 ms)
+2023-08-31 23:54:09,219 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-54' coro=<Dispatcher._process_polling_updates() done, defined at D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: can't find end of the entity starting at byte offset 41")>
+Traceback (most recent call last):
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\PythonProject1\handlers.py", line 23, in on_new_chat_members
+    await message.answer(welcome_message, reply_markup=keyboard, parse_mode=types.ParseMode.MARKDOWN)
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\types\message.py", line 438, in answer
+    return await self.bot.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of the entity starting at byte offset 41
+2023-08-31 23:54:28,849 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:94] in chat [group:-973524039]
+2023-08-31 23:56:06,737 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:95] in chat [group:-973524039]
+2023-08-31 23:56:06,807 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448688]: [failed] (in 70 ms)
+2023-08-31 23:56:06,807 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-65' coro=<Dispatcher._process_polling_updates() done, defined at D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: can't find end of the entity starting at byte offset 41")>
+Traceback (most recent call last):
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\PythonProject1\handlers.py", line 23, in on_new_chat_members
+    await message.answer(welcome_message, reply_markup=keyboard, parse_mode=types.ParseMode.MARKDOWN)
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\types\message.py", line 438, in answer
+    return await self.bot.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\PythonProject1\.venv\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of the entity starting at byte offset 41
+2023-08-31 23:57:27,622 - aiogram - INFO - Bot: Alis [@travel_alis_bot]
+2023-08-31 23:57:27,766 - aiogram - WARNING - Updates were skipped successfully.
+2023-08-31 23:57:27,767 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2023-08-31 23:57:40,293 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:98] in chat [group:-973524039]
+2023-08-31 23:57:40,384 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448691]: [success] (in 92 ms)
+2023-08-31 23:57:45,132 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:100] in chat [group:-973524039]
+2023-08-31 23:57:45,231 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448692]: [success] (in 99 ms)
+2023-08-31 23:59:04,037 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:102] in chat [group:-973524039]
+2023-08-31 23:59:07,635 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:103] in chat [group:-973524039]
+2023-08-31 23:59:07,847 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448694]: [success] (in 212 ms)
+2023-08-31 23:59:40,226 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:105] in chat [group:-973524039]
+2023-08-31 23:59:40,227 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448695]: [success] (in 1 ms)
+2023-08-31 23:59:42,993 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:106] in chat [group:-973524039]
+2023-08-31 23:59:43,150 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448696]: [success] (in 157 ms)
+2023-08-31 23:59:58,832 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:108] in chat [group:-973524039]
+2023-08-31 23:59:58,833 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448697]: [success] (in 1 ms)
+2023-09-01 00:01:25,621 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:109] in chat [group:-973524039]
+2023-09-01 00:01:25,760 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448698]: [success] (in 140 ms)
+2023-09-01 00:01:50,827 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:111] in chat [group:-973524039]
+2023-09-01 00:04:08,188 - aiogram - INFO - Bot: Alis [@travel_alis_bot]
+2023-09-01 00:04:08,328 - aiogram - WARNING - Updates were skipped successfully.
+2023-09-01 00:04:08,328 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2023-09-01 00:04:27,314 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:112] in chat [group:-973524039]
+2023-09-01 00:04:27,315 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448700]: [success] (in 1 ms)
+2023-09-01 00:04:32,465 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:113] in chat [group:-973524039]
+2023-09-01 00:04:32,568 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448701]: [success] (in 104 ms)
+2023-09-01 00:16:31,690 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:115] in chat [group:-973524039]
+2023-09-01 00:16:31,784 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448702]: [success] (in 93 ms)
+2023-09-01 00:17:00,209 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:117] in chat [group:-973524039]
+2023-09-01 00:17:00,321 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448703]: [success] (in 112 ms)
+2023-09-01 00:17:23,757 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:119] in chat [group:-973524039]
+2023-09-01 00:17:23,856 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448704]: [success] (in 99 ms)
+2023-09-01 00:19:07,589 - aiogram.contrib.middlewares.logging - INFO - Received message [ID:121] in chat [group:-973524039]
+2023-09-01 00:19:07,718 - aiogram.contrib.middlewares.logging - INFO - Process update [ID:146448705]: [success] (in 130 ms)
